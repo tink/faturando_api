@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "factory_girl"
   s.add_development_dependency "fakeweb"
   s.add_development_dependency "faker"
-  s.add_runtime_dependency "active_resource"
+  s.add_runtime_dependency "activeresource"
 end
