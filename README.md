@@ -43,9 +43,9 @@ por exemplo, no `environment.rb`
 
 Para poder se comunicar com o Faturando você precisa configurar a chave da API e o código do produto a ser utilizado.
 
-Faturando.configure do |c|
-  c.project_key = '1234'
-  c.api_key   = 'XYZ'
-end
+    Faturando.configure do |c|
+      c.project_key = '1234'
+      c.api_key   = 'XYZ'
+    end
 
 Se você estiver utilizando Rails deve preferêncialmente criar um initializer.
