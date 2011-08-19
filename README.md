@@ -18,7 +18,7 @@ $ gem install faturando_api
 
 ### Requisitos
 
-Esta biblioteca depende do ActiveResource com versão 2.3.4 ou maior.
+Esta biblioteca depende do ActiveResource com versão 2.3.4 ou superior.
 
 $ gem install activeresource
 
@@ -27,7 +27,7 @@ $ gem install activeresource
 
 Para utilizar a biblioteca basta importá-la utilizando:
 
-    gem 'faturando_api'
+    require 'faturando_api'
 
 
 Se você está usando Rails 3 basta adicionar a seguinte linha no Gemfile:
