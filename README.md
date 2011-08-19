@@ -48,4 +48,4 @@ Para poder se comunicar com o Faturando você precisa configurar a chave da API 
       c.api_key   = 'XYZ'
     end
 
-Se você estiver utilizando Rails deve preferêncialmente criar um initializer.
+Se você estiver utilizando Rails deve preferencialmente criar um initializer.
