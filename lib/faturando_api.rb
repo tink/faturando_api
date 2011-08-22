@@ -56,10 +56,12 @@ module Faturando
       Base.timeout   = timeout unless (timeout.blank?)
 
       self.site ||= "https://faturan.do/"
+      project_base_path = site + "/projects/#{project_key}"
 
-      base_path = site + "/projects/#{project_key}"
-      Base.site = base_path
-      FeatureValue.site = base_path + "/plans/:plan_id"
+      Base.site = site
+      Plan.site = project_base_path
+      Feature.site = project_base_path
+      FeatureValue.site = project_base_path + "/plans/:plan_id"
     end
   end
 
@@ -74,6 +76,12 @@ module Faturando
       options.merge!(:dasherize => false)
       super
     end
+  end
+
+  class Subscription < Base
+  end
+
+  class Customer < Base
   end
 
   class Feature < Base
