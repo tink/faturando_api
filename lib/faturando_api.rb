@@ -55,12 +55,16 @@ module Faturando
       Base.password  = 'X'
       Base.timeout   = timeout unless (timeout.blank?)
 
-      self.site ||= "https://faturan.do/"
+      self.site ||= "https://faturan.do"
       project_base_path = site + "/projects/#{project_key}"
 
       Base.site = site
+
       Plan.site = project_base_path
       Feature.site = project_base_path
+      Customer.site = project_base_path
+      Subscription.site = project_base_path
+
       FeatureValue.site = project_base_path + "/plans/:plan_id"
     end
   end
