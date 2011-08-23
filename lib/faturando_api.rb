@@ -82,6 +82,9 @@ module Faturando
     end
   end
 
+  class Project < Base
+  end
+
   class Subscription < Base
   end
 
