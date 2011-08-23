@@ -83,6 +83,9 @@ module Faturando
   end
 
   class Project < Base
+    def self.current
+      self.find(Faturando.project_key)
+    end
   end
 
   class Subscription < Base
