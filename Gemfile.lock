@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    faturando_api (0.1.1)
+    faturando_api (0.1.2)
       activeresource
 
 GEM
